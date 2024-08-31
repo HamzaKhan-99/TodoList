@@ -1,0 +1,163 @@
+/* reset all ele  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* style root ele  */
+html {
+    font-size: 4vw;
+    line-height: 1.2em;
+
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    padding: 1rem;
+
+}
+
+/* style main container */
+.container {
+    width: 80vw;
+    margin: auto;
+    border: 2px solid limegreen;
+    /* padding: .3rem; */
+    border-radius: 1rem;
+    background-color: #a2daa2;
+    box-shadow: .3rem .3rem 0.5rem #88ee88;
+}
+
+/* style header  */
+.header {
+    /* padding: .4rem 1.2rem; */
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+
+.header h1 {
+    padding: .5rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    /* color:rgb(5, 111, 40); */
+    text-shadow: 2px 2px #89d9ee;
+
+}
+
+/* style add btn  */
+.add {
+    /* background: blue; */
+    padding: .5rem 0 0;
+    display: flex;
+}
+
+.add input::placeholder {
+    border: none;
+    color: #7cbb7c;
+    font-size: .8rem;
+}
+
+.add span {
+    text-align: center;
+    width: 25%;
+    border: .08rem solid;
+    display: inline-block;
+    padding: .2rem;
+    cursor: pointer;
+    background: rgb(218, 226, 209);
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+.add span:hover {
+    background: #86eb76;
+    transition: all 0.3s ease;
+}
+
+/* style input  */
+.add input {
+    /* margin: 1rem 0; */
+    border: .08rem solid;
+    width: 75%;
+    padding: .5rem;
+    /* border: none; */
+    outline: none;
+    font-size: .8rem;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+
+}
+
+#myUL {
+
+    /* background-color:#a2daa2 ; */
+
+    /* background: blueviolet; */
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    /* margin: 1rem 0; */
+}
+
+#myUL li {
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+#myUL li {
+    position: relative;
+    /* margin-right: 1rem; */
+    /* margin-top: .2rem; */
+    /* background: rgb(190, 197, 150); */
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+#myUL li:nth-child(odd) {
+    background: #98cca2;
+}
+#myUL li.checked {
+    background: #494444;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#myUL li:hover {
+    background: lightyellow;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+
+
+/* Add a "checked" mark when clicked on */
+#myUL li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 .1rem .1rem 0;
+    top: 0.2rem;
+    left: 0.3rem;
+    transform: rotate(45deg);
+    height: 0.6rem;
+    width: 0.3rem;
+    /* background: blue; */
+
+  }
+  .close{
+    background: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 .5rem ;
+    background: transparent;
+  }
+  .close:hover{
+    background: red;
+    transform: all 0.3 ease;
+  }
